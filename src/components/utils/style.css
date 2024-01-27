@@ -1,0 +1,8 @@
+.data-hover {
+  transform: translateY(0);
+}
+
+.span-hover {
+  transform: translate(-50%, -10px);
+  opacity: 1;
+}

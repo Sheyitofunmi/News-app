@@ -1,0 +1,47 @@
+.listContainer {
+  transition: all ease-in 3s;
+}
+
+.icons_list {
+  transition: all ease-in 0.3s;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(0);
+}
+
+.listContainer:hover .content_news {
+  bottom: -10%;
+}
+.listContainer:hover .icons_list {
+  opacity: 1;
+  transform: translateY(-95%);
+}
+.content_news {
+  transition: all ease-in 0.3s;
+
+  position: absolute;
+  bottom: -23%;
+}
+
+
+
+/* Custom styles for the select arrow */
+.arrow svg {
+  transition: transform 0.2s ease-in-out; /* Add a transition for a smooth effect */
+}
+
+/* Change the arrow color on hover */
+.arrow:hover svg {
+  fill: #4a5568; /* Change this to your desired hover color */
+}
+
+/* Change the arrow color on focus */
+.arrow:focus svg {
+  fill: #4a5568; /* Change this to your desired focus color */
+}
+
+/* Rotate the arrow when the select is open */
+.arrow.select-open svg {
+  transform: rotate(180deg);
+}
+
